@@ -2,13 +2,11 @@ var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
 var Q = require('q');
-var mongoose = require('mongoose');
-var models = require('./dtx_files/dtx_models');
+//var mongoose = require('mongoose');
+//var models = require('./dtx_files/dtx_models');
 var app = express();
 app.use(express.static(__dirname + '/dist'));
-app.use(require('prerender-node'));
 app.use(bodyParser.json());
-//mongoose.connect('mongodb://localhost/lex_web_db');
 
 //Interceptors
 function requestInterceptor (req, res, next) {
