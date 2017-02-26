@@ -1,6 +1,5 @@
 'use strict';
-angular.module('index', ['ui.bootstrap', 'index.landPad', 'ngRoute', 'truncate']);
-
+angular.module('index', ['ui.bootstrap', 'index.landPad', 'index.demoPage', 'ngRoute', 'truncate']);
 angular.module('index.landPad', []);
 angular.module('index.landPad').controller('landPadController', landPadController);
 landPadController.$inject = ['$location', 'masterFactory', '$filter', '$uibModal', '$scope', '$route', '$rootScope'];
@@ -8,7 +7,13 @@ function landPadController ($location, masterFactory, $filter, $uibModal, $scope
     var lp = this;
     lp.message = 'This is the header of the page.';
 }
-'use strict';
+angular.module('index.demoPage', []);
+angular.module('index.demoPage').controller('demoPageController', demoPageController);
+demoPageController.$inject = ['$location', 'masterFactory', '$filter', '$uibModal', '$scope', '$route', '$rootScope'];
+function demoPageController ($location, masterFactory, $filter, $uibModal, $scope, $route, $rootScope) {
+    var dp = this;
+    dp.message = 'This is the header of the demo page.';
+}
 angular.module('index').config(['$routeProvider', '$locationProvider', '$httpProvider', function ($routeProvider, $locationProvider, $httpProvider) {
     $routeProvider
         .when('/', {
@@ -16,6 +21,9 @@ angular.module('index').config(['$routeProvider', '$locationProvider', '$httpPro
         })
         .when('/home', {
             templateUrl: 'modules/landPad/landPad.html'
+        })
+        .when('/demoPage', {
+            templateUrl: 'modules/demoPage/demoPage.html'
         })
         .otherwise({
             redirectTo: '/home'
