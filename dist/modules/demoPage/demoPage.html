@@ -3,27 +3,34 @@
         padding: 50px;
         background: #2e2e2e;
     }
+    .one {
+        background: url('https://www.walldevil.com/wallpapers/a76/survei-pictures-minimalism-sky-wallpaper-minimalist-wallpapers.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
 </style>
 <div class="row" style="margin: 0;" data-ng-controller="demoPageController as dp">
-    <div class="col-md-12" style="background: #ccc;">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="padding: 25px 15px 25px 15px;">
-            <a href="/home" style="font-size: 20px;"><span class="fa fa-arrow-left"></span> Home</a>
+    <div class="col-md-12 one">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" style="padding: 25px 15px 25px 15px;">
+                <a href="/home" style="font-size: 20px;"><span class="fa fa-arrow-left"></span> Home</a>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <div class="col-md-1"></div>
-    </div>
-    <div class="col-md-12" style="background: #ccc;">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="height: 700px;background: #fff;">
-            <div class="row" id="templates" style="margin: 0;">
-                <h1>{{dp.message}}</h1>
-            </div>
-            <div class="row" id="graphics" style="margin: 0;">
-                <h1>{{dp.message}}</h1>
-            </div>
+        <div class="row" style="margin: 0;">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" style="height: 700px;background: #fff;">
+                <div class="row" id="templates" style="margin: 0;">
+                    <h1>{{dp.message}}</h1>
+                </div>
+                <div class="row" id="graphics" style="margin: 0;">
+                    <h1>{{dp.message}}</h1>
+                </div>
 
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <div class="col-md-1"></div>
     </div>
     <div class="col-md-12 foot">
         <div class="row" style="margin: 0;color: #fff;">

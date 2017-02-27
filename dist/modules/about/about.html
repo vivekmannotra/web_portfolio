@@ -3,22 +3,91 @@
         padding: 50px;
         background: #2e2e2e;
     }
+    .one {
+        background: url('https://www.walldevil.com/wallpapers/a76/survei-pictures-minimalism-sky-wallpaper-minimalist-wallpapers.jpg');
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    p {
+        font-size: 16px;
+        text-align: justify;
+    }
+    h1 {
+        font-size: 36px;
+    }
 </style>
 <div class="row" style="margin: 0;" data-ng-controller="aboutController as ab">
-    <div class="col-md-12" style="background: #ccc;">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="padding: 25px 15px 25px 15px;">
-            <a href="/home" style="font-size: 20px;"><span class="fa fa-arrow-left"></span> Home</a>
+    <div class="col-md-12 one">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" style="padding: 25px 15px 25px 15px;">
+                <a href="/home" style="font-size: 20px;"><span class="fa fa-arrow-left"></span> Home</a>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <div class="col-md-1"></div>
-    </div>
-    <div class="col-md-12" style="background: #ccc;">
-        <div class="col-md-1"></div>
-        <div class="col-md-10" style="height: 700px;background: #fff;">
-            <h1>{{ab.message}}</h1>
-            <a href="/home">Go to Home</a>
+        <div class="row" style="margin: 0;">
+            <div class="col-md-1"></div>
+            <div class="col-md-10" style="background: #fff;padding: 30px 15px;">
+                <div class="row" style="margin: 0;display:flex;justify-content: center;">
+
+                    <div class="col-md-4" style="padding: 15px;">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="Generic placeholder image" width="100%" height="100%">
+                    </div>
+                    <div class="col-md-6">
+                        <h1>Vivek Mannotra</h1>
+                        <p>I am a 24 years old guy, interested in a wide variety of topics and activities. I spend
+                            most of my time trying to find answers to questions that my mind throws at me. Here is a
+                            list of few things which I follow :</p>
+                        <p>Music - With Interests ranging from Beethoven to Kishore Kumar, it is basically the
+                            primary source of entertainment in my life.
+                        </p>
+                        <p>Physics and Cosmology - I can remember myself as a child looking up the night sky and
+                            wondering what is all this?
+                        </p>
+                        <p>Psychology and Philosophy - two heavy words, but a bit of Neitzsche in time of despair
+                            surely helps.
+                        </p>
+                        <p>Food and Cooking - Tandoori Chicken, Sushi, idli dosa, Rajma Chawal, nimbu pani, bring
+                            it all!
+                        </p>
+                    </div>
+                </div>
+                <div class="row" style="margin: 0 0 40px 0;display:flex;justify-content: center;">
+                    <div class="col-md-5">
+                        <h1>Employment History</h1>
+                        <p style="font-size: 20px;margin-top: 30px;">LexStart</p>
+                        <p>April 2016 - February 2017</p>
+                        <ul type="circle">
+                            <li>Worked as a full stack developer</li>
+                            <li>Handled More than one applications</li>
+                        </ul>
+                        <p style="font-size: 20px;margin-top: 30px;">Capgemini India Pvt. Ltd.</p>
+                        <p>June 2013 - February 2016</p>
+                        <ul type="circle">
+                            <li>Worked in an offshore development team</li>
+                            <li>Handled More than one applications</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5">
+                        <h1>Education Summary</h1>
+                        <p style="font-size: 20px;margin-top: 30px;">BE (Mech. Engineering)</p>
+                        <p>2009 - 2013</p>
+                        <ul type="circle">
+                            <li>SMVDU, Katra</li>
+                            <li>7.2 / 10 CGPA</li>
+                        </ul>
+                        <p style="font-size: 20px;margin-top: 30px;">XII Standard</p>
+                        <p>2008 - 2009</p>
+                        <ul type="circle">
+                            <li>Under CBSE</li>
+                            <li>82.4% Aggregate</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
         </div>
-        <div class="col-md-1"></div>
     </div>
     <div class="col-md-12 foot">
         <div class="row" style="margin: 0;color: #fff;">
