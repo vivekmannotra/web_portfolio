@@ -1,4 +1,47 @@
+<style>
+    .foot {
+        padding: 50px;
+        background: #2e2e2e;
+    }
+</style>
 <div class="row" style="margin: 0;" data-ng-controller="aboutController as ab">
-    <h1>{{ab.message}}</h1>
-    <p><a href="/home">Home</a></p>
+    <div class="col-md-12" style="background: #ccc;">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="padding: 25px 15px 25px 15px;">
+            <a href="/home" style="font-size: 20px;"><span class="fa fa-arrow-left"></span> Home</a>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="col-md-12" style="background: #ccc;">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="height: 700px;background: #fff;">
+            <h1>{{ab.message}}</h1>
+            <a href="/home">Go to Home</a>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+    <div class="col-md-12 foot">
+        <div class="row" style="margin: 0;">
+            <div class="col-md-6">
+                <h1>Contact </h1>
+                <p><a href="telto:7506081230"><span class="fa fa-phone"></span> +91 7506081230</a></p>
+                <p><a href="mailto:vivekmannotra@rocketmail.com"><span class="fa fa-envelope"></span> vivekmannotra@rocketmail.com</a></p>
+                <address style="color: #fff;">
+                    <p> Current Address :</p>
+                    <p style="margin: 0;"><strong>Vivek Mannotra</strong></p>
+                    <p style="margin: 0;">Flat no. 203,</p>
+                    <p style="margin: 0;">Sri Uma Housing Society,</p>
+                    <p style="margin: 0;">Tikalwadi Marg, Mahim West,</p>
+                    <p style="margin: 0;">Mumbai - 400016</p>
+                </address>
+            </div>
+            <div class="col-md-6">
+                <h1>Social Media </h1>
+                <p><a href="https://www.facebook.com" target="_blank"><span class="fa fa-facebook"> </span> Vivek Mannotra</a></p>
+                <p><a href="https://www.twitter.com" target="_blank"><span class="fa fa-twitter"> </span> Vivek Mannotra</a></p>
+                <p><a href="https://www.linked.com" target="_blank"><span class="fa fa-linkedin"> </span> Vivek Mannotra</a></p>
+                <p><a href="https://www.instagram.com" target="_blank"><span class="fa fa-instagram"> </span> Vivek Mannotra</a></p>
+            </div>
+        </div>
+    </div>
 </div>
