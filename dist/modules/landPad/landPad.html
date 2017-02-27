@@ -3,7 +3,7 @@
         background: url('http://www.androidguys.com/wp-content/uploads/2016/05/Poly-Lakeside.jpg');
         background-attachment: fixed;
         background-size: cover;
-        padding: 100px 30px 0 30px;
+        padding: 150px 30px 0 30px;
     }
     .two {
         background: url('http://img05.deviantart.net/803a/i/2015/193/e/a/windows_10_default_wallpaper_minimal_by_link6155-d910rjc.png');
@@ -35,10 +35,16 @@
         padding: 50px;
         background: #2e2e2e;
     }
+    .icn:hover {
+        border: 1px solid #ccc;
+        box-shadow: 2px 3px 5px 0px rgb(107, 107, 107);
+
+    }
 </style>
 <div class="row" style="margin: 0;" data-ng-controller="landPadController as lp">
     <div class="col-md-12 one">
-        <div class="col-md-5"></div>
+        <div class="col-md-1"></div>
+        <div class="col-md-4"></div>
         <div class="col-md-6">
             <div class="col-md-12">
 
@@ -46,7 +52,7 @@
             <div class="col-md-12" style="background: #fff;padding: 10px 30px;">
                 <h1 style="font-size: 54px;">Vivek Mannotra</h1>
                 <p style="font-size: 28px;">
-                    This webpage will tell you about the things I can do which can be sold to people
+                    Design, Front end and Data
                 </p>
                 <p class="ppj" style="font-size: 18px;">3 years and 10 months of work experience in software development, design, user experience / usability, data structuring / representation, API design, graphics/ web typography / iconography, covering almost all aspects of web based user and customer interaction.</p>
                 <p class="ppj" style="font-size: 18px;">Looking to form a symbiotic work relationship with an organisation or group of individuals, where I get a chance to apply the best of my knowledge to solving problems in a dynamic and result oriented work environment, and which in turn helps me grow, learn and earn.</p>
@@ -60,7 +66,7 @@
     </div>
     <div class="col-md-12" style="background: #272727;padding: 40px 0;">
         <div class="row" style="margin: 0;">
-            <div id="inSlider" class="carousel slide animated" style="min-height: 420px;" data-ride="carousel" data-interval="1500">
+            <div id="inSlider" class="carousel slide animated" style="min-height: 420px;" data-ride="carousel" data-interval="3000">
                 <ol class="carousel-indicators">
                     <li data-target="#inSlider" data-slide-to="0" class="active"></li>
                     <li data-target="#inSlider" data-slide-to="1"></li>
@@ -73,11 +79,13 @@
                             <div class="col-md-12 text-center" style="color: #fff;">
                                 <h1>Web design and development</h1>
                             </div>
-                            <div class="col-md-2 col-sm-4 col-xs-6">
-                                <p class="ico-p"><img width="100%" src="https://image.flaticon.com/icons/svg/201/201560.svg"></p>
-                                <p class="ico-d">
-                                    Designing Websites
-                                </p>
+                            <div class="row" style="margin: 0">
+                                <div class="col-md-2 col-sm-4 col-xs-6" style="margin: 0 auto;">
+                                    <p class="ico-p"><img width="100%" src="https://image.flaticon.com/icons/svg/201/201560.svg"></p>
+                                    <p class="ico-d">
+                                        Designing Websites
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -151,63 +159,64 @@
         <div class="col-md-10">
             <div class="col-md-12" style="background: #fff;padding: 10px 30px;">
                 <h1 style="margin-top: 50px;text-align: center;">Tools and Technologies</h1>
-                <p style="font-size: 20px;padding: 10px;">For Website/Web Applications</p>
-                <div class="row" style="margin: 0;display: flex;flex-wrap: wrap;">
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                <div style="width: 150px;border-bottom: 2px solid #3e3e3e;margin: 0 auto;"></div>
+                <p style="font-size: 20px;padding: 10px;text-align: center;margin-top: 30px;">For building websites/web applications</p>
+                <div class="row" style="margin: 0;display: flex;flex-wrap: wrap;justify-content: center;padding: 10px 30px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="http://www.logotypes101.com/logos/194/830812341256B99B32E1A9F242BB9F5F/css3logo.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="http://doingbusinessineurope.com/static/images/angular.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="http://www.smartswebservices.com/wp-content/uploads/2015/10/bootstrap-logo.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 30px 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 30px 20px;">
                         <a href="google.com"><img width="100%" src="https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="http://precision-software.com/wp-content/uploads/2014/04/jQurery.gif"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="http://blog.shajahanbasha.in/wp-content/uploads/2016/04/mongodb-logo-1.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://www.mysql.com/common/logos/logo-mysql-170x115.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://lh3.googleusercontent.com/-R1vj8A-aFB4/VovUZQu5XMI/AAAAAAAAEkM/XflyUsBDeg4/w484-h252/icon_WebStorm%2Bcopy.png"></a>
                     </div>
                 </div>
-                <p style="font-size: 20px;padding: 10px;">For Graphic Design</p>
-                <div class="row" style="margin: 0;display: flex;flex-wrap: wrap;">
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                <p style="font-size: 20px;padding: 10px;text-align: center;margin-top: 30px;">For Graphic Design</p>
+                <div class="row" style="margin: 0;display: flex;flex-wrap: wrap;justify-content: center;padding: 10px 30px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://upload.wikimedia.org/wikipedia/en/3/3b/Canva_Logo.png"></a>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-6" style="padding: 30px 20px;">
+                    <div class="col-md-3 col-sm-4 col-xs-6 icn" style="padding: 30px 20px;">
                         <a href="google.com"><img width="100%" src="https://twopennyblog.files.wordpress.com/2016/05/illustrator-full-logo.png?w=564"></a>
                     </div>
-                    <div class="col-md-3 col-sm-4 col-xs-6" style="padding: 30px 20px;">
+                    <div class="col-md-3 col-sm-4 col-xs-6 icn" style="padding: 30px 20px;">
                         <a href="google.com"><img width="100%" src="http://www.formwelkin.com/wp-content/uploads/2015/06/photoshop-full-logo.png"></a>
                     </div>
                 </div>
-                <p style="font-size: 20px;padding: 10px;">For Repository/version management, task automation and web deployment</p>
-                <div class="row" style="margin: 0;display: flex;flex-wrap: wrap;">
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                <p style="font-size: 20px;padding: 10px;text-align: center;margin-top: 30px;">For Repository/version management, task automation and web deployment</p>
+                <div class="row" style="margin: 0;display: flex;flex-wrap: wrap;justify-content: center;padding: 10px 30px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://www.scm-manager.com/wp-content/uploads/2013/04/git-logo.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://cdn.worldvectorlogo.com/logos/grunt-1.svg"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/ff/DigitalOcean_logo.svg/1024px-DigitalOcean_logo.svg.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://deploybot.com/images/deploybot-logo.png"></a>
                     </div>
-                    <div class="col-md-2 col-sm-4 col-xs-6" style="padding: 20px;">
+                    <div class="col-md-2 col-sm-4 col-xs-6 icn" style="padding: 20px;">
                         <a href="google.com"><img width="100%" src="https://cdn.worldvectorlogo.com/logos/heroku.svg"></a>
                     </div>
                 </div>
@@ -218,9 +227,10 @@
     <div class="col-md-12" style="background: #272727;padding: 0 30px;">
         <div class="col-md-1"></div>
         <div class="col-md-10">
-            <div class="row"  style="margin: 0;height: 500px;background: #fff;">
+            <div class="row"  style="margin: 0;background: #fff;padding: 10px 30px;">
                 <h1 style="text-align: center;">Description of work experience</h1>
-                <ul type="circle">
+                <div style="width: 150px;border-bottom: 2px solid #3e3e3e;margin: 0 auto;"></div>
+                <ul type="circle" style="margin-top: 30px;font-size: 16px;">
                     <li>Started work as a Java programmer with Java SE, Java EE, Spring Framework and Hibernate ORM</li>
                     <li>Worked on multiple project for Walt Disney Parks Resorts</li>
                 </ul>
@@ -235,28 +245,31 @@
             <div class="col-md-12" style="background: #fff;">
                 <div class="row text-center" style="margin: 0;">
                     <h1>Sample Work</h1>
+                    <div style="width: 150px;border-bottom: 2px solid #3e3e3e;margin: 0 auto;"></div>
                 </div>
-                <div class="row" style="margin: 0;">
-                    <div class="col-md-6">
+                <div class="row" style="margin: 0;padding: 30px 0;">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-4 icn">
                         <a href="/demoPage#templates">
                             <div class="row" style="margin: 0;padding: 40px;">
                                 <img width="100%" src="https://image.flaticon.com/icons/svg/235/235270.svg">
                             </div>
-                            <div class="row" style="margin: 0;">
-                                <p style="font-size: 24px;">Email Templates</p>
+                            <div class="row text-center" style="margin: 0;">
+                                <p style="font-size: 24px;color: #888888;">Email Templates</p>
                             </div>
                         </a>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-4 icn">
                         <a href="/demoPage#graphics">
                             <div class="row" style="margin: 0;padding: 40px;">
                                 <img width="100%" src="https://image.flaticon.com/icons/svg/235/235266.svg">
                             </div>
-                            <div class="row" style="margin: 0;">
-                                <p style="font-size: 24px;">Graphic Design</p>
+                            <div class="row text-center" style="margin: 0;">
+                                <p style="font-size: 24px;color: #888888;">Graphic Design</p>
                             </div>
                         </a>
                     </div>
+                    <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
