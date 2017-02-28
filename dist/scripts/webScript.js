@@ -44,8 +44,11 @@ angular.module('index').config(['$routeProvider', '$locationProvider', '$httpPro
 }]);
 angular.module('index').factory('masterFactory', ['$http', '$location', function ($http, $location) {
     var api_root = window.location.origin;
+    function getEmail (request) {
+        return $http.post(api_root + '/getEmail', request);
+    }
     return {
-
+        getEmail : getEmail
     }
 }]);
 angular.module('index').filter('compoundFilter', ['$filter', function ($filter) {
@@ -61,7 +64,31 @@ angular.module('index').filter('compoundFilter', ['$filter', function ($filter) 
 }]);
 angular.module('index').run(['$http', '$rootScope', '$uibModal', 'masterFactory', function ($http, $rootScope, $uibModal, masterFactory) {
     $http.defaults.headers.common['Content-Type'] = 'application/json';
+    $rootScope.showMailModal = function (key) {
+        $rootScope.mailType = key;
+        $rootScope.selectedTemplate = (key === 'INS') ? 'modules/mailTemplates/sample_invoice.html':'modules/mailTemplates/sample_promotion.html';
+        $rootScope.mailModal = $uibModal.open({
+            templateUrl: 'modules/mailModal.html',
+            scope: $rootScope,
+            size: 'lg'
+        });
+        $rootScope.mailModal.result.then(function (response){
 
+        });
+    };
+    $rootScope.sendEmail = function (toEmail) {
+        masterFactory.getEmail({
+            to: toEmail,
+            type: $rootScope.mailType
+        }).then(function (response) {
+            if (response.data.status === 'success') {
+                alert('Email has been sent!');
+                $rootScope.mailModal.close();
+            }
+        }).catch(function (error) {
+            alert('Error occured while trying to send mail!');
+        });
+    }
 }]);
 angular.module('truncate', [])
     .filter('characters', function () {
