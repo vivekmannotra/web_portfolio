@@ -66,7 +66,7 @@ angular.module('index').run(['$http', '$rootScope', '$uibModal', 'masterFactory'
     $http.defaults.headers.common['Content-Type'] = 'application/json';
     $rootScope.showMailModal = function (key) {
         $rootScope.mailType = key;
-        $rootScope.selectedTemplate = (key === 'INS') ? 'modules/mailTemplates/sample_invoice.html':'modules/mailTemplates/sample_promotion.html';
+        $rootScope.selectedTemplate = (key === 'IMS') ? 'modules/mailTemplates/sample_invoice.html':'modules/mailTemplates/sample_promotion.html';
         $rootScope.mailModal = $uibModal.open({
             templateUrl: 'modules/mailModal.html',
             scope: $rootScope,
