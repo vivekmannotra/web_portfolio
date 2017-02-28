@@ -9528,3 +9528,6 @@ body {
 @media (max-width: 580px) {
 
 }
+.not-round {
+  border-radius: 0 !important;
+}
