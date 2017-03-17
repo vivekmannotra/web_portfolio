@@ -9528,6 +9528,23 @@ body {
 @media (max-width: 580px) {
 
 }
+@media screen and (max-width: 480px) {
+  .sm-slider {
+   padding: 0 20px !important;
+  }
+  .hide-on-phone {
+    display: none !important;
+  }
+  .show-on-phone {
+      display: block !important;
+  }
+  h1 {
+    font-size: 40px !important;
+  }
+  .unpad {
+    padding: 5px !important;
+  }
+}
 .not-round {
   border-radius: 0 !important;
 }
