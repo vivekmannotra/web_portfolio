@@ -57,7 +57,7 @@
 
 </script>
 <div class="row" style="margin: 0;" data-ng-controller="landPadController as lp">
-    <div class="col-md-12 one">
+    <div class="col-md-12 one unpad">
         <div class="col-md-1"></div>
         <div class="col-md-4"></div>
         <div class="col-md-6">
@@ -93,7 +93,7 @@
         </div>
         <div class="row" style="margin: 0;">
             <div id="inSlider" class="carousel slide animated" style="min-height: 420px;" data-ride="carousel" data-interval="2500">
-                <ol class="carousel-indicators">
+                <ol class="carousel-indicators hide-on-phone">
                     <li data-target="#inSlider" data-slide-to="0" class="active"></li>
                     <li data-target="#inSlider" data-slide-to="1"></li>
                     <li data-target="#inSlider" data-slide-to="2"></li>
@@ -231,12 +231,22 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <div class="row show-on-phone" style="margin: 0;display: none;">
+                <a class="left carousel-control" data-target="#inSlider" role="button" data-slide="prev" style="background: none;">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" data-target="#inSlider" role="button" data-slide="next" style="background: none;">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
         </div>
     </div>
-    <div class="col-md-12 two">
+    <div class="col-md-12 two unpad">
         <div class="col-md-1">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 unpad">
             <div class="col-md-12" style="background: #fff;padding: 10px 30px;">
                 <h1 style="margin-top: 50px;text-align: center;">Tools and Technologies</h1>
                 <div style="width: 150px;border-bottom: 2px solid #3e3e3e;margin: 0 auto;"></div>
@@ -332,10 +342,10 @@
         </div>
         <div class="col-md-1"></div>
     </div>
-    <div class="col-md-12 three">
+    <div class="col-md-12 three unpad">
         <div class="col-md-1">
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 unpad">
             <div class="col-md-12" style="background: #fff;padding: 30px;">
                 <div class="row text-center" style="margin: 0;">
                     <h1>Work Samples</h1>
