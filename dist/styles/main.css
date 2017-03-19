@@ -9547,6 +9547,9 @@ body {
   .one {
     padding: 30px !important;
   }
+  .mail-card > center {
+    zoom: 0.4;
+  }
 }
 .not-round {
   border-radius: 0 !important;
